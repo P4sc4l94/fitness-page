@@ -175,7 +175,7 @@ img {
   display: flex;
   height: 50px;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   transition: 0.2s;
   width: 100%;
@@ -557,7 +557,7 @@ img {
 
 .category__title {
   color: rgba(128, 128, 128, 0.3);
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
