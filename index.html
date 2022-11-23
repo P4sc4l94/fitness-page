@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NueFitness</title>
+  <script src="https://kit.fontawesome.com/7334f54e3a.js" crossorigin="anonymous"></script>
+  <!-- Install jQuery via CDN -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script type="text/javascript" src="js/resize.js"></script> -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <nav class="top-nav" id="topNav">
+    <button class="top-nav__btn top-nav__menu-btn" title="Main Menu" onclick="openNav()"><span class="top-nav__menu-btn__desktop">Menu</span><span class="top-nav__menu-btn__mobile"><i class="fa-solid fa-angle-down"></i></span></button>
+    <div id="menu" class="top-nav__menu-overlay">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> 
+      <div class="top-nav__menu">
+        <a href="/"><span class="top-nav__menu--active">Home</span></a>
+        <a href="/">About Brooke</a>
+        <a href="/">Blog</a>
+        <a href="/">Contact</a>
+      </div>
+    </div> 
+    <button class="top-nav__btn top-nav__search-btn" title="Search Button" onclick="toggleSearch()"><i class="fa-solid fa-magnifying-glass"></i></button>
+    <input type="text" placeholder="Search..." class="top-nav__searchbar" id="searchBar" />
+  </nav>
+  <header class="header-block">
+    <div class="header__wrapper">
+      <h2 class="header-block__tagline">Fitness <br/>Handled.</h2>
+      <a href="#" class="btn btn--outline-clearBg">Learn More</a>
+    </div>
+  </header>
+  <main>
+    <section class="profile">
+      <div class="profile__wrapper">
+        <div class="profile__img">
+          <img src="img/slick-profile_2_orig.jpg" alt="Profile picture of Brooke">
+        </div>
+        <div class="profile__text-block">
+          <h2 class="profile__header">I'm Brooke</h2>
+          <p>​Integer vel sapien id nisi gravida sodales. Aliquam convallis lorem sapien, sit amet vehicula dui volutpat id. Suspendisse at nisi nec neque dignissim iaculis ut id quam. Suspendisse et vehicula urna, congue tempor tellus. Fusce fringilla scelerisque egestas. Suspendisse potenti. </p>
+          <p>Donec maximus felis sed purus semper iaculis. Donec vitae eleifend sapien. Phasellus augue id varius volutpat. </p>
+          <div class="space"></div>
+          <a href="#" class="btn btn--dark-gray">More About Me</a>
+        </div>
+      </div>
+    </section>
+    <section class="featured-section content-wrap">
+      <h2 class="profile__header">Featured In</h2>
+      <div class="space"></div>
+      <div class="featured-section__wrapper">
+      <div class="featured-section__img"><img src="img/slick-featured-1_5.png" alt="Fit Women Magazine" /></div>
+      <div class="featured-section__img"><img src="img/slick-featured-2_2.png" alt="Cardio"/></div>
+      <div class="featured-section__img"><img src="img/slick-featured-3_2.png" alt="Fit 'N Fab Magazine"/></div>
+      <div class="featured-section__img"><img src="img/slick-featured-4_2.png" alt="Exercise Nerds"/></div>
+      </div>
+    </section>
+    <section class="category">
+      <h2 class="category__title">Nutrition</h2>
+      <div class="category-article__wrapper">
+        <article class="category-article">
+          <img src="img/slick-nutrition-1_12_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">Delicious Smoothie Recipes</h3>
+          <p class="category-article__date">September 14, 2016</p>
+        </article>
+        <article class="category-article">
+          <img src="img/slick-nutrition-2_3_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">Get Started with a Nutritious Breakfast</h3>
+          <p class="category-article__date">August 21, 2016</p>
+        </article>
+        <article class="category-article">
+          <img src="img/slick-nutrition-3_4_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">How to Make Sure Your Diet is Balanced</h3>
+          <p class="category-article__date">July 30, 2016</p>
+        </article>
+      </div>
+    </section>
+    <section class="category category--light-gray">
+      <h2 class="category__title">Strength</h2>
+      <div class="category-article__wrapper">
+        <article class="category-article">
+          <img src="img/slick-strength-1_1_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">5 Kettlebell Exercises You Must Try</h3>
+          <p class="category-article__date">September 02, 2016</p>
+        </article>
+        <article class="category-article">
+          <img src="img/slick-strength-2_1_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">The Gear You Need Before Lifting</h3>
+          <p class="category-article__date">August 19, 2016</p>
+        </article>
+        <article class="category-article">
+          <img src="img/slick-strength-3_1_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">Is Improper Form Holding You Back?</h3>
+          <p class="category-article__date">August 05, 2016</p>
+        </article>
+      </div>
+    </section>
+    <section class="category">
+      <h2 class="category__title">Cardio</h2>
+      <div class="category-article__wrapper">
+        <article class="category-article">
+          <img src="img/slick-cardio-1_5_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">Try This Interval Workout</h3>
+          <p class="category-article__date">August 15, 2016</p>
+        </article>
+        <article class="category-article">
+          <img src="img/slick-cardio-2_5_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">How to Stay Active with Little Ones</h3>
+          <p class="category-article__date">July 28, 2016</p>
+        </article>
+        <article class="category-article">
+          <img src="img/slick-cardio-3_5_orig.jpg" class="category-article__img" alt=""/>
+          <h3 class="category-article__title">Songs for Your Workout Playlist</h3>
+          <p class="category-article__date">July 02, 2016</p>
+        </article>
+      </div>
+    </section>
+    <section class="call-to-action">
+      <h2 class="call-to-action__title">Don't Miss Anything</h2>
+      <p class="call-to-action__text">Get newsletters and exclusives sent directly to your inbox</p>
+      <a href="#" class="btn btn--outline">Sign Up Now</a>
+    </section>
+  </main>
+  <footer>
+    <p class="footer__copy">NueFitness &copy;2022</p>
+  </footer>
+
+  <script>
+    function openNav() {
+      // document.getElementById("topNav").style.height = "100%";
+      let menu = document.getElementById("menu");
+      menu.classList.toggle("top-nav__menu-overlay-open");
+    }
+
+    function closeNav() {
+      document.getElementById("menu").classList.toggle("top-nav__menu-overlay-open");
+    }
+
+    function toggleSearch(){
+      let search = document.getElementById("searchBar");
+      search.classList.toggle("top-nav__searchbar--open");
+    }
+  </script>
+  <script>
+    function changeColor(scrollPos) {
+      let navbar = document.getElementById("topNav"); //identifies nav by id
+      if(scrollPos >= 25) {
+        //if scroll position is past 25 pixels, apply class
+        navbar.classList.add("top-nav--fadeInOut");
+      } else {
+        //if scroll is NOT past 25 pixels, remove class
+        navbar.classList.remove("top-nav--fadeInOut");
+      }
+    }
+
+    function testDevice() {
+      let lastKnownPosition = 0; //stores scroll position
+      let ticking = false;
+
+      if( /Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent) ) {
+        // test if document is opened on a mobile device
+        console.log('Mobile Device');
+      } else {
+        // if document is opened in a desktop, fire the event listener
+        document.addEventListener('scroll', (e) => {
+          lastKnownPosition = window.scrollY; //stores vertical scroll position
+
+          if(!ticking) {
+            //optimizes scroll event; scroll event throttling
+            // https://developer.mozilla.org/en-US/docs/Web/API/Document/scroll_event
+            window.requestAnimationFrame(() => {
+              changeColor(lastKnownPosition); //sends scroll position to changeColor function
+              console.log(window.scrollY);
+              ticking = false;
+            });
+          }
+          ticking = true;
+        });
+        console.log('Desktop');
+      }
+    }
+
+    testDevice(); //calls function to start the process
+  </script>
+</body>
+</html>
