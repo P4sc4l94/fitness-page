@@ -185,6 +185,7 @@ img {
   .top-nav {
     background-color: transparent;
     height: 60px;
+    position: fixed;
   }
 }
 
