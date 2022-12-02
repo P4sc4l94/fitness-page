@@ -175,15 +175,17 @@ img {
   display: flex;
   height: 50px;
   justify-content: space-between;
-  position: fixed;
+  position: sticky;
   top: 0;
   transition: 0.2s;
   width: 100%;
+  z-index: 1;
 }
 @media screen and (min-width: 768px) {
   .top-nav {
     background-color: transparent;
     height: 60px;
+    position: fixed;
   }
 }
 
@@ -369,6 +371,10 @@ img {
   visibility: visible;
 }
 
+.top-nav--fadeInOut {
+  background-color: var(--black) !important;
+}
+
 /* ----------
 * HEADER
 ---------- */
@@ -381,7 +387,7 @@ img {
   height: 50vh;
   position: relative;
   text-align: center;
-  z-index: -1;
+  z-index: 0;
 }
 @media screen and (min-width: 768px) {
   .header-block {
@@ -552,7 +558,7 @@ img {
 
 .category__title {
   color: rgba(128, 128, 128, 0.3);
-  font-size: 4em;
+  font-size: 3em;
   letter-spacing: 0.06em;
   text-align: center;
   text-transform: uppercase;
@@ -600,6 +606,24 @@ img {
     font-size: 1.5em;
     line-height: 2rem;
   }
+}
+.category-article a .fa-external-link-alt {
+  font-size: 0.75rem;
+}
+.category-article a, .category-article a:visited {
+  color: var(--black);
+  text-decoration: none;
+  transition: 0.2s;
+}
+.category-article a:hover {
+  color: var(--hot-pink);
+}
+.category-article a:active {
+  color: var(--light-hot-pink);
+}
+.category-article a:focus {
+  outline: 2px solid mediumaquamarine;
+  outline-offset: 2px;
 }
 .category-article .category-article__date {
   font-size: 0.9em;
